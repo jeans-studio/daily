@@ -1,4 +1,4 @@
-body {background:#222; font-family:'Circular Std Bold', sans-serif; color:#fff; line-height:1.4; }
+body {background:#000; font-family:'Circular Std Bold', sans-serif; color:#fff; line-height:1.4; }
 img {max-width:100%; height:auto;}
 
 div {width:100vw; height:100vh; display:flex; align-items:center; justify-content:center; perspective:100rem; }
