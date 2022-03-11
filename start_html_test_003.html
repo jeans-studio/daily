@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; box-sizing: border-box; }
+      header, section {width: 100%; margin: 1rem 0;}
+      :root { font-size: 24px; }
+      body { font-family: "SF Pro JP","SF Pro Text","SF Pro Icons","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ","Meiryo","ＭＳ Ｐゴシック","Helvetica Neue","Helvetica","Arial",sans-serif; margin: 1rem; }
+      h1 { font-weight: bold; }
+
+      .wide { width: 576px; margin: 0 auto; }
+      .normal { width: 384px; margin: 0 auto; font-size: .9rem;}
+
+      .header { display: flex; align-items: center; }
+      .header h1 svg { width: 3rem; height: 3rem; margin-right: 1rem; }
+
+      .orderNumber { background: #000; color: #fff; padding: 1rem; text-align: center; margin: 1rem 0; font-weight: bold; }
+      .orderNumber h1 {font-size: 2rem;}
+
+      .orderList { border-top: 1px solid; border-bottom: 1px dashed; }
+      .orderList div { display: flex; margin: 1rem 0;}
+      .orderList div>h1 { margin-right: 1rem; }
+      .orderListPrice { border-bottom: 1px solid; padding-bottom: 1rem; }
+      .orderListPrice div {  display: flex; }
+      .orderListPrice div:first-child { font-weight: bold; }
+      .orderListPrice div p { flex-grow: 1; }
+      .orderListPrice div p:last-child {text-align: right;}
+
+      .thanks { font-size: .75rem; text-align: center; border-top: 1px solid; padding: 1rem 0; }
+
+      .barcode { text-align: center; }
+      .barcode img { margin: 0 auto; width: 50%; height: auto; }
+
+    </style>
+
+  </head>
+  <body class="wide">
+    <header class="header">
+      <h1>
+        <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1.09064 29.8411H10.4796C18.6907 29.8411 23.3679 25.3005 23.3679 17.1205C23.3679 8.87125 18.6907 4.39999 10.4796 4.39999H1.09064C0.744185 4.39999 0.53631 4.60796 0.53631 4.95457V29.2865C0.53631 29.6331 0.744185 29.8411 1.09064 29.8411ZM9.85602 10.3617C14.36 10.3617 16.7852 12.58 16.7852 17.1205C16.7852 21.6611 14.36 23.8794 9.85602 23.8794H6.91113V10.3617H9.85602Z" fill="#000"/>
+          <path d="M34.6066 30.1877C38.1059 30.1877 41.4319 28.8359 43.1295 25.6818C43.3027 25.3352 43.1641 25.0926 42.8523 24.9539L38.4177 23.4635C38.1405 23.3942 37.898 23.4635 37.6901 23.7061C37.0318 24.6073 35.9925 25.0232 34.6413 25.0232C32.909 25.0232 31.731 24.0181 31.2806 22.2157H43.1295C43.476 22.2157 43.6838 22.0424 43.7185 21.6958C44.0649 15.4222 40.7389 11.0895 34.6066 11.0895C28.7515 11.0895 24.9751 15.0062 24.9751 20.6213C24.9751 26.271 28.7515 30.1877 34.6066 30.1877ZM34.5373 15.9767C36.1657 15.9767 37.2397 16.9819 37.5862 18.8189H31.2806C31.6617 16.9472 32.8051 15.9767 34.5373 15.9767Z" fill="#000"/>
+          <path d="M0.13898 35.061C-0.253442 34.3879 0.231806 33.5427 1.01062 33.5427H42.9893C43.7863 33.5427 44.2688 34.4238 43.8396 35.0958L40.9632 39.6H2.78559L0.13898 35.061Z" fill="#000"/>
+        </svg>
+      </h1>
+      <h4><p>注文番号：1234567890</p><p>お届け予定時間：12:34</p></h4>
+    </header>
+
+    <section class="orderNumber">
+      <h1>D1234</h1>
+      <h2>要集金(代金引換)</h2>
+    </section>
+
+    <section class="customer">
+      <h1>お客様情報</h1>
+      <p>出前太郎 様</p>
+      <p>090-1111-2222</p>
+      <p>東京都 新宿区4丁目 テストマンション101</p>
+    </section>
+
+    <section class="receipt">
+      <h1>領収書</h1>
+      <p>株式会社　XXX / 領収書要</p>
+    </section>
+
+    <section class="note">
+      <h1>備考</h1>
+      <p>注文備考テキスト。置き配備考テキスト。【置き配】チャイムや電話で連絡を取って、部屋の玄関の前に置き配をお願いします。</p>
+    </section>
+
+    <section class="orderList">
+      <div>
+        <h1>×1</h1>
+        <dl>
+          <dt><h1>極（きわみ）【743】1.5人前　12 貫 1,690円</h1></dt>
+          <dd>容器について さび抜き＋さび別付け 10円</dd>
+      </div>
+      <div>
+        <h1>×1</h1>
+        <dl>
+          <dt><h1>極（きわみ）【743】1.5人前　12 貫 1,690円</h1></dt>
+          <dd>容器について さび抜き＋さび別付け 10円</dd>
+      </div>
+    </section>
+
+    <section class="orderListPrice">
+      <div>
+        <p>お支払金額</p>
+        <p>3,420円</p>
+      </div>
+      <div>
+        <p>商品代金合計</p>
+        <p>3,200円</p>
+      </div>
+      <div>
+        <p>送料・値引・その他手数料計</p>
+        <p>200円</p>
+      </div>
+    </section>
+
+    <section class="coupon">
+      <h1>クーポン・出前館特典</h1>
+      <p>1,000円以上でX円値引き(クーポン内容)</p>
+      <p>3,000円以上のご注文で、緑茶1本プレゼント(出前館特典内容)</p>
+    </section>
+
+    <section class="thanks">
+      銀のさら　デモ店(店舗名)をご利用いただき、ありがとうございました。
+    </section>
+
+    <section class="barcode">
+      <img src="data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAHoAAAA4CAYAAAAyyeyDAAAAAXNSR0IArs4c6QAAAHhlWElmTU0AKgAAAAgABAEaAAUAAAABAAAAPgEbAAUAAAABAAAARgEoAAMAAAABAAIAAIdpAAQAAAABAAAATgAAAAAAAACQAAAAAQAAAJAAAAABAAOgAQADAAAAAQABAACgAgAEAAAAAQAAAHqgAwAEAAAAAQAAADgAAAAAVqAlwQAAAAlwSFlzAAAWJQAAFiUBSVIk8AAAABxpRE9UAAAAAgAAAAAAAAAcAAAAKAAAABwAAAAcAAAB2Mez5ngAAAGkSURBVHgB7NRbagMxEETR2f+mHfRxSHPxoAW4A+GqHgp4xpXnsz8/8QSen/iU+yE/+6J/5Evw9UU/z/OZv54Fj37jW49f+jt8GvnIx5svx96r/5a/9dqv7j0a9Ut5qcevrn/yfdHjS+2BoQdWyks9Po03X47ulc2r9fmH+6L3Rf//+/bN+PZNkU2+9filu3wa+cjHmy/H3qv/lr/12q/uPRr1S3mpx6+uf/Jd9C56F20ZpQWVenwab74c3SubV+vzD3fRu+hdtGWUcynzrMej8ebL0b2yebU+/3AXvYveRVtGOZcyz3o8Gm++HN0rm1fr8w930bvoXbRllHMp86zHo/Hmy9G9snm1Pv9wF72L3kVbRjmXMs96PBpvvhzdK5tX6/MPd9G76F20ZZRzKfOsx6Px5svRvbJ5tT7/cBe9i95FW0Y5lzLPejwab74c3SubV+vzD3fRu+hdtGWUcynzrMej8ebL0b2yebU+/3AXvYveRVtGOZcyz3o8Gm++HN0rm1fr8w930bvoXbRllHMp86zHo/Hmy9G9snm1Pv9wF/0ji/4DAAD//9F1rSQAAAHBSURBVO3VS2okQRAE0br/pSVy8VBgdJH7VgiEpX9yoKvaNc/Ph5/neX7mrwqPfuNbj1/6d/g08pGPN1+OvVf/LX/rtV/dezTql/JSj19d/+SP0qQiyqr55VuPX7rPp5GPfLz5cuy9+m/5W6/96t6jUb+Ul3r86von3xc9/np5YOiBlfJSj0/jzZeje2Xzan3+4b7ofdF//0/7Znz6psgm33r80l0+jXzk482XY+/Vf8vfeu1X9x6N+qW81ONX1z/5LnoXvYu2jNKCSj0+jTdfju6Vzav1+Ye76F30LtoyyrmUedbj0Xjz5ehe2bxan3+4i95F76Ito5xLmWc9Ho03X47ulc2r9fmHu+hd9C7aMsq5lHnW49F48+XoXtm8Wp9/uIveRe+iLaOcS5lnPR6NN1+O7pXNq/X5h7voXfQu2jLKuZR51uPRePPl6F7ZvFqff7iL3kXvoi2jnEuZZz0ejTdfju6Vzav1+Ye76F30LtoyyrmUedbj0Xjz5ehe2bxan3+4i95F76Ito5xLmWc9Ho03X47ulc2r9fmHu+j/vOj5TdjzdzyBj4v+jo+2n2I+gX3R82l88Xlf9Be/3PnRfgGeoAftP6K26wAAAABJRU5ErkJggg==" />
+    </section>
+
+
+  </body>
+</html>
