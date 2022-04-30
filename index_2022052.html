@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="jp" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Good Bye VVID</title>
+    <meta name="description" content="description" />
+		<meta name="keywords" content="keywords" />
+		<meta name="author" content="LINE Corp." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="57x57" href="images/fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="images/fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="images/fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="images/fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="images/fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="images/fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="images/fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="images/fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="images/fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav/favicon-16x16.png">
+    <link rel="manifest" href="images/fav/manifest.json">
+    <meta name="msapplication-TileColor" content="#000">
+    <meta name="msapplication-TileImage" content="images/fav/ms-icon-144x144.png">
+    <meta name="theme-color" content="#000">
+    <meta name="description" content="Good Bye VVID">
+    <meta property="og:title" content="Good Bye VVID">
+    <meta property="og:url" content="https://vvid.app/">
+    <meta property="og:image" content="images/share/share_facebook.png">
+    <meta property="og:description" content="Good Bye VVID">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Good Bye VVID">
+    <meta name="twitter:url" content="https://vvid.app/">
+    <meta name="twitter:image" content="images/share/share_twitter.png">
+    <meta name="twitter:description" content="We will Remember you Forever">
+    <style>
+      /*---------- CSS reset ----------*/
+      html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline;  }
+      article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+      ol, ul { list-style: none; }
+      blockquote, q { quotes: none; }
+      blockquote:before, blockquote:after,
+      q:before, q:after { content: ''; content: none; }
+      table { border-collapse: collapse; border-spacing: 0; }
+      a { text-decoration: none; outline: none; color:#000; }
+      a:hover, a:active {text-decoration: none; }
+
+      /*- Common -*/
+      body { font-family: "-apple-system","system-ui","SF Pro JP","SF Pro Text","SF Pro Icons","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ","Meiryo","ＭＳ Ｐゴシック","Helvetica Neue","Helvetica","Arial",'sans-serif'; background: #000; color: #fff; transition: all .5s; width: 100%; }
+
+      header { width: 100%; height: 4rem; margin: 1rem auto; display: flex; justify-content: center; align-items: center; }
+
+      .warp { height: calc(100vh - 20rem); padding: 4rem; margin: 0 1rem; background: linear-gradient(70deg, #F70081, #006DFF); position: relative; top: 0; left: 0; border-radius: 1rem; text-align: center; animation-name: gradi; animation-duration: 10s; animation-iteration-count: infinite; overflow:scroll; }
+
+      .title { height: calc(100vh - 18rem); display: flex; align-items: flex-end; mix-blend-mode: overlay;}
+      .title div {width: 100%;}
+      .title div h1 { font-size: 10vw; font-weight: 800; line-height: 0.9; opacity: 0; animation-fill-mode: forwards; animation-timing-function: cubic-bezier(0.5, 0.1, 0.1, 1); position: relative; }
+      .title div h1:nth-child(1) {text-align: left; animation-name: title; animation-duration: 1s; animation-delay: 0; }
+      .title div h1:nth-child(2) {text-align: center; animation-name: title; animation-duration: 1s; animation-delay: 0.5s;}
+      .title div h1:nth-child(3) {text-align: right; animation-name: title; animation-duration: 1s; animation-delay: 0.25s; }
+      .title div svg {text-align: center; margin: 1rem; position: relative; animation-name: arrow; animation-duration: 1s; animation-delay: 0.75s; animation-iteration-count: infinite; animation-timing-function: ease-out; opacity: 0;  }
+
+      .date {display: grid; grid-template-columns: repeat(4, 1fr); gap: 1rem ;text-align: left; margin: 8rem 0; mix-blend-mode: overlay; border-top: 1px solid #fff;}
+      .date dl {flex-grow: 1; border-bottom: 1px solid #ffffff4d;  padding: 2rem 0; }
+      .date dl dt {font-size: 0.75rem; color: #ffffff99;font-weight: bold;}
+
+      .message {line-height: 2; font-size: 1.25rem; margin: 8rem 0; mix-blend-mode: overlay; }
+      .message p { margin: 2rem 0;}
+
+      .ending {font-size: 2rem; text-align: center; margin: 8rem 0; line-height: 1.5;}
+
+      footer { width: 100%; height: 4rem; margin: 1rem auto; display: flex; justify-content: center; align-items: center; font-size: .75rem; color: #ffffff4d; text-align: center; line-height: 1.5; }
+
+      @keyframes title { 0% { filter: blur(40px); opacity: 0; top: -2rem; } 100% { filter: blur(0px); opacity: 1; top: 0rem;  } }
+      @keyframes gradi { 0% { filter: hue-rotate(0deg); linear-gradient(0deg); } 100% { filter: hue-rotate(360deg); linear-gradient(360deg)} }
+      @keyframes arrow { 0% { top:-10px; opacity: 0; } 90% { top:0; opacity: 1;} 100% {opacity: 0;} }
+
+      /*- Responsive -*/
+      @media ( max-width: 1023px ) {
+        header { height: 2rem; margin: .5rem auto; }
+        header h1 svg { height: 1rem; }
+        .warp { height: calc(100vh - 9rem); padding: 1rem; margin: 0 .5rem; border-radius: .5rem;}
+        .title { height: calc(100vh - 10rem); }
+        .title div h1 { font-size: 16vw; line-height: 1}
+        .date {grid-template-columns: repeat(2, 1fr); gap: 1rem ; margin: 3rem 0;}
+        .date dl {padding: 1rem 0;}
+        .date dl dd { font-size: .75rem; }
+        .message { font-size: 1rem; margin: 3rem 0; text-align: left}
+        .ending { font-size: 1.25rem; margin: 2rem 0 4rem 0;; }
+        footer { height: 2rem;  }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>
+        <svg width="109" height="24" viewBox="0 0 109 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M30.8566 0L15.4283 24L0 0H6.79997L15.4283 14.352L24.095 0H30.8566ZM62.5147 0L47.0864 24L31.6581 0H38.4581L47.0864 14.352L55.7531 0H62.5147ZM92.9347 23.6C102.029 23.6 109 21.02 109 11.8C109 2.58005 102.024 0 92.9347 0H78.9449V23.6H92.9347ZM84.7555 18.4H93.0988C97.3931 18.3856 102.789 17.8161 102.789 11.7C102.789 5.50729 97.2633 5 92.9401 5H84.7555V18.4Z" fill="white"/>
+          <path d="M71.7316 23.6V0H65.921V23.6H71.7316Z" fill="white"/>
+        </svg>
+      </h1>
+    </header>
+    <section class="warp">
+      <article class="title">
+        <div>
+          <h1>We will</h1>
+          <h1>Remember you</h1>
+          <h1>Forever</h1>
+          <svg width="24" height="28" viewBox="0 0 24 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12.0076 0C10.8372 0 10.0469 0.805978 10.0469 2.00734V18.8149L10.1837 22.1148L6.71818 18.1762L3.25269 14.7394C2.9031 14.3744 2.43192 14.1311 1.85434 14.1311C0.805573 14.1311 0 14.9219 0 16.032C0 16.5338 0.212793 17.0205 0.60798 17.431L10.5636 27.3917C10.9284 27.7871 11.4756 28 12.0076 28C12.5244 28 13.0716 27.7871 13.4364 27.3917L23.392 17.431C23.8024 17.0205 24 16.5338 24 16.032C24 14.9219 23.2096 14.1311 22.1457 14.1311C21.5833 14.1311 21.1121 14.3744 20.7625 14.7394L17.297 18.1762L13.8163 22.1148L13.9531 18.8149V2.00734C13.9531 0.805978 13.1628 0 12.0076 0Z" fill="white"/>
+          </svg>
+        </div>
+      </article>
+      <article class="date">
+        <dl>
+          <dt>サービス開始</dt>
+          <dd>2020.08.17</dd>
+        </dl>
+        <dl>
+          <dt>サービス終了</dt>
+          <dd>2021.12.10</dd>
+        </dl>
+        <dl>
+          <dt>払戻完了</dt>
+          <dd>2022.02.24</dd>
+        </dl>
+        <dl>
+          <dt>個人情報の削除</dt>
+          <dd>2022.4.29</dd>
+        </dl>
+      </article>
+      <article class="message">
+        <p>
+          VVIDを愛してくれたすべてのユーザーに感謝します。
+        </p>
+        <p>
+          2020年8月にサービスを開始し、2021年12月10日サービスが終了から2022年2月24日（木）15時払い戻しまですべて完了しました。<br />
+          ご登録いただいた会員の皆様の個人情報につきましては、弊社規定に従い削除しました。
+        </p>
+        <p>
+          短い時間でしたが、皆さんに会って私たちは幸せでした。<br />
+          あなたが好きなIPをデジタルカードで見ることができるように多くの努力をしました、<br />
+          皆さんが使う費用が全く惜しくなく、所蔵したいデジタルカードを作るよう努めました。<br />
+          だからVVIDを最後まで守ることができず、いつもすみません。
+        </p>
+        <p>
+          しかし、VVIDは皆さんのおかげで内部に多くのインスピレーションを与えました、<br />
+          これまで、NFTサービスをはじめとする様々な事業を行う上で多くのお役に立ちました。<br />
+          私たちはすぐに新しいサービスを作り、皆さんに再び見せたいと思います。
+        </p>
+        <p>
+          짧지만 열렬히 사랑해준 여러분들을 위해 우린
+          다시 한번 VVID를 사랑해줘서 고맙다는 말씀을 전합니다.<br />
+          더 좋은 서비스로 반드시 보답하겠습니다.
+        </p>
+      </article>
+      <article class="ending">
+        Thank you & Good Bye<br />
+        VVID<br />
+        👋
+      </article>
+    </section>
+    <footer>
+      From ABC Studio <br /> ©LINE Corporation
+    </footer>
+
+  </body>
+</html>
